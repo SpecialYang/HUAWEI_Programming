@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /** 
 * MP3光标位置
+* 注意判断初始窗口很重要
+* 然后可以根据初始窗口将小于等于4 和 大于 4结合起来
 * @author special
 * @date 2017年11月29日 下午6:51:19
 */
