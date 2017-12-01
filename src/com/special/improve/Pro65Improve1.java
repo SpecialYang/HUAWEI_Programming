@@ -3,7 +3,7 @@ package com.special.improve;
 import java.util.Scanner;
 
 /** 
-*
+* 也可以使用startWith用来判断一个字符串是否是另一个字符串的前缀
 * @author special
 * @date 2017年11月30日 上午11:56:59
 */
@@ -37,7 +37,12 @@ public class Pro65Improve1 {
 				boolean isAllMatch = true;
 				if(originCmds.length == inputCmds.length){
 					for(int j = 0; j < originCmds.length; j++)
+						/*
 						if(!isMatch(originCmds[j],inputCmds[j])){
+							isAllMatch = false;
+							break;
+						}*/
+						if(!originCmds[j].startsWith(inputCmds[j])){
 							isAllMatch = false;
 							break;
 						}
