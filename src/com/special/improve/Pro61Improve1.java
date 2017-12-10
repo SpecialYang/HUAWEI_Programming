@@ -15,7 +15,7 @@ public class Pro61Improve1 {
 		int result = 0;
 		while(n != 0){
 			if((n & 1) == 1) result++;
-			n >>= 1;
+			n >>>= 1;
 		}
 		return result;
 	}
